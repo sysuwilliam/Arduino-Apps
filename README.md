@@ -6,6 +6,7 @@
 
 | 目录 | 应用 | 说明 |
 | --- | --- | --- |
+| `ai-camera-detection/` | AI Camera Detection | 使用 USB 摄像头和 AI 目标检测模型识别实时画面中的物体 |
 | `blink-led/` | Blink LED | 通过 Python 和 Arduino Router Bridge 控制板载 LED 每秒闪烁 |
 | `detect-objects-on-camera/` | Detect Objects on Camera | 使用 USB 摄像头和目标检测 Brick 识别实时画面中的物体 |
 | `detect-objects-on-smartphone-camera/` | Detect Objects on Smartphone Camera | 使用手机摄像头作为远程视频输入进行目标检测 |

@@ -1,0 +1,8 @@
+name: AI Camera Detection
+description: Detect objects from a live USB camera feed with an AI model and show results in a web dashboard.
+ports: []
+bricks:
+- arduino:video_object_detection:
+    model: yolox-object-detection
+- arduino:web_ui: {}
+icon: 📷

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Camera Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Arduino UNO Q</p>
+        <h1>AI Camera Detection</h1>
+      </div>
+      <div id="connectionStatus" class="status">Connecting</div>
+    </header>
+
+    <section class="workspace">
+      <div class="video-panel">
+        <iframe id="videoFrame" title="AI camera video stream"></iframe>
+        <div id="videoPlaceholder" class="video-placeholder">
+          <span class="camera-icon">📷</span>
+          <strong>Searching for camera stream</strong>
+          <span>Connect a USB camera and run this app in Arduino App Lab.</span>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <section class="control-section">
+          <div class="section-heading">
+            <h2>Confidence</h2>
+            <output id="confidenceValue">0.50</output>
+          </div>
+          <input id="confidenceSlider" type="range" min="0" max="1" step="0.01" value="0.5">
+          <div class="range-labels">
+            <span>More results</span>
+            <span>Higher certainty</span>
+          </div>
+        </section>
+
+        <section class="result-section">
+          <div class="section-heading">
+            <h2>Latest Detection</h2>
+          </div>
+          <div id="latestDetection" class="latest-empty">No object detected yet</div>
+        </section>
+
+        <section class="result-section">
+          <div class="section-heading">
+            <h2>Recent Detections</h2>
+          </div>
+          <ol id="recentDetections" class="detection-list"></ol>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="libs/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
