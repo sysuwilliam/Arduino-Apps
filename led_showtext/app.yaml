@@ -1,0 +1,5 @@
+name: LED_showtext
+description: LED_showtext 是一个面向 Arduino UNO Q 的 Arduino App Lab 示例工程，用于在板载 8 x 13 LED 矩阵 上循环滚动显示文本。
+ports: []
+bricks: []
+icon: 😀
