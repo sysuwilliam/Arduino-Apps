@@ -1,12 +1,61 @@
+# Local environment metadata
 .agents/
 .codex/
 .gitrepo/
 
+# Arduino App Lab generated files
 .cache/
 **/.cache/
-.venv/
-**/.venv/
+app-compose.yaml
+app-compose-overrides.yaml
+**/app-compose.yaml
+**/app-compose-overrides.yaml
 
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+**/.venv/
+**/venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / web tooling
+node_modules/
+dist/
+build/
+.vite/
+.parcel-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arduino / embedded build output
+*.hex
+*.bin
+*.elf
+*.map
+*.eep
+*.lst
+*.o
+*.a
+*.d
+build-*/
+
+# Editor and OS files
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
